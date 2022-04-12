@@ -4,7 +4,7 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
-  background-color: #25a3ff;
+  background-color: #bc7b8f;
   position: relative;
   overflow: hidden;
 }
@@ -318,13 +318,13 @@ body {
   position: absolute;
   width: 0;
   height: 3px;
-  color: #25a3ff;
+  color: #bc7b8f;
   background-color: currentColor;
   transition: 1s 0.2s ease-out;
 }
 
 .c-form__next {
-  color: #25a3ff;
+  color: #bc7b8f;
   position: absolute;
   right: -40px;
   height: 100%;
@@ -367,6 +367,6 @@ body {
   position: fixed;
   height: 100%;
   width: 0;
-  background-color: #0069ec;
+  background-color: #be2855;
   transition: 0.3s;
 }

@@ -4,12 +4,12 @@ body {
 }
 
 a {
-  color: #3498db;
+  color: #bc7b8f;
   text-decoration: none;
 }
 
 a:hover {
-  color: #5faee3;
+  color: #be5071;
   text-decoration: none;
 }
 
@@ -38,7 +38,7 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #3498db;
+  background: #bc7b8f;
   color: #fff;
   transition: all 0.4s;
 }
@@ -182,12 +182,12 @@ h6 {
 .nav-menu a:hover,
 .nav-menu .active > a,
 .nav-menu li:hover > a {
-  color: #3498db;
+  color: #bc7b8f;
   text-decoration: none;
 }
 
 .nav-menu .get-started a {
-  background: #3498db;
+  background: #bc7b8f;
   color: #fff;
   border-radius: 50px;
   margin: 0 0 0 30px;
@@ -235,7 +235,7 @@ h6 {
 .nav-menu .drop-down ul a:hover,
 .nav-menu .drop-down ul .active > a,
 .nav-menu .drop-down ul li:hover > a {
-  color: #3498db;
+  color: #bc7b8f;
 }
 
 .nav-menu .drop-down > a:after {
@@ -332,7 +332,7 @@ h6 {
 .mobile-nav a:hover,
 .mobile-nav .active > a,
 .mobile-nav li:hover > a {
-  color: #3498db;
+  color: #bc7b8f;
   text-decoration: none;
 }
 
@@ -342,7 +342,7 @@ h6 {
 }
 
 .mobile-nav .get-started a {
-  background: #3498db;
+  background: #bc7b8f;
   color: #fff;
   border-radius: 50px;
   margin: 0 15px;
@@ -456,12 +456,12 @@ h6 {
   padding: 10px 30px;
   border-radius: 50px;
   transition: 0.5s;
-  color: #3498db;
-  border: 2px solid #3498db;
+  color: #bc7b8f;
+  border: 2px solid #bc7b8f;
 }
 
 #hero .btn-get-started:hover {
-  background: #3498db;
+  background: #bc7b8f;
   color: #fff;
 }
 
@@ -563,7 +563,7 @@ section {
   content: "";
   width: 50px;
   height: 2px;
-  background: #3498db;
+  background: #bc7b8f;
   display: inline-block;
 }
 
@@ -648,7 +648,7 @@ section {
   left: 0;
   top: 2px;
   font-size: 20px;
-  color: #3498db;
+  color: #bc7b8f;
   line-height: 1;
 }
 
@@ -757,7 +757,7 @@ iframe {
 }
 
 .features .icon-box h3 a:hover {
-  color: #3498db;
+  color: #bc7b8f;
 }
 
 .features .icon-box:hover {

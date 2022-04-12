@@ -4,7 +4,7 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
-  background-color: #bc7b8f;
+  background-color: #fff9cf;
   position: relative;
   overflow: hidden;
 }

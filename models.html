@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+
+  <title>Faculty Portal</title>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
+
+  <link href="assets/img/favicon.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+
+  <link href="assets/css/models.css" rel="stylesheet" />
+</head>
+
+<body>
+  <h2>3D Models</h2>
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('nature')"> Detected</button>
+
+  </div>
+
+  <div class="row">
+    <div class="column nature">
+      <button>
+        <div class="content">
+          <img alt="drone"
+            id="https://gltf-viewer.donmccurdy.com#kiosk=1&model=https://storage.googleapis.com/blocks-town/tmp/busterDrone/busterDrone.gltf"
+            onclick="upload(this.id,this.alt)" src="assets/3dmodels/thumbnails/drone.PNG" style="width:100%">
+          <h4> Drone </h4>
+        </div>
+    </div>
+    <div class="column nature">
+      <button>
+        <div class="content">
+          <img alt="skeleton" id="https://p3d.in/JNSZo" onclick="upload(this.id,this.alt)"
+            src="assets/3dmodels/thumbnails/humanskeleton.PNG" style="width:100%">
+          <h4>Skeleton</h4>
+        </div>
+    </div>
+    <div class="column nature">
+      <button>
+        <div class="content">
+          <img alt="neural" id="https://p3d.in/8tTgN" onclick="upload(this.id,this.alt)"
+            src="assets/3dmodels/thumbnails/Neural Network.png" style="width:100%">
+          <h4>Neural Network</h4>
+        </div>
+    </div>
+    <div class="column nature">
+      <button>
+        <div class="content">
+          <img alt="dna" id="https://bit.ly/2Yk3535" onclick="upload(this.id,this.alt)"
+            src="assets/3dmodels/thumbnails/DNA.png" style="width:100%">
+          <h4>DNA</h4>
+        </div>
+    </div>
+    <div class="column nature">
+      <button>
+        <div class="content">
+          <img alt="Skull" id="https://p3d.in/ScjMy" onclick="upload(this.id,this.alt)"
+            src="assets/3dmodels/thumbnails/skull.png" style="width:100%">
+          <h4>Skull</h4>
+        </div>
+    </div>
+
+    <div class="column nature">
+      <button>
+        <div class="content">
+          <img alt="Brain" id="https://p3d.in/TjhKw" onclick="upload(this.id,this.alt)"
+            src="assets/3dmodels/thumbnails/brain.png" style="width:100%">
+          <h4>Brain</h4>
+        </div>
+    </div>
+
+    <div class="column nature">
+      <button>
+        <div class="content">
+          <img alt="Spine" id="https://p3d.in/5DMLi" onclick="upload(this.id,this.alt)"
+            src="assets/3dmodels/thumbnails/spine.png" style="width:100%">
+          <h4>Spine</h4>
+        </div>
+    </div>
+
+    <div class="column nature">
+      <button>
+        <div class="content">
+          <img alt="bulb" id="https://bit.ly/3j1Zej6" onclick="upload(this.id,this.alt)"
+            src="assets/3dmodels/thumbnails/bulb.PNG" style="width:100%">
+          <h4>Bulb</h4>
+        </div>
+      </button>
+    </div>
+    <div class="column nature">
+      <button>
+        <div class="content">
+          <img alt="ball" id="https://p3d.in/3PXGe" onclick="upload(this.id,this.alt)"
+            src="assets/3dmodels/thumbnails/ball.PNG" style="width:100%">
+          <h4>Ball</h4>
+        </div>
+      </button>
+    </div>
+
+    <div class="column nature">
+      <button>
+        <div class="content">
+          <img alt="eye" id="https://p3d.in/Sa2HZ" onclick="upload(this.id,this.alt)"
+            src="assets/3dmodels/thumbnails/humaneye.PNG" style="width:100%">
+          <h4>Eye Ball</h4>
+        </div>
+      </button>
+    </div>
+
+    <div class="column nature">
+      <button>
+        <div class="content">
+          <img alt="body" id="https://p3d.in/05fmR" onclick="upload(this.id,this.alt)"
+            src="assets/3dmodels/thumbnails/humanbody.PNG" style="width:100%">
+          <h4>Human Body</h4>
+        </div>
+      </button>
+    </div>
+    <div class="column nature">
+      <button>
+        <div class="content">
+          <img alt="cell" id="https://p3d.in/lTiw3" onclick="upload(this.id,this.alt)"
+            src="assets/3dmodels/thumbnails/CellStructure.PNG" style="width:100%">
+          <h4>Animal Cell</h4>
+        </div>
+      </button>
+    </div>
+    <div class="column nature">
+      <button>
+        <div class="content">
+          <img alt="heart" id="https://p3d.in/cfpek" onclick="upload(this.id,this.alt)"
+            src="assets/3dmodels/thumbnails/heart.PNG" style="width:100%">
+          <h4>Heart</h4>
+        </div>
+      </button>
+    </div>
+
+    <div class="column nature">
+      <button>
+        <div class="content">
+          <img
+            id="https://v.creators3d.com/index.html?load=/views/production/item/2020819/9211259937682196/9211259937682196.glb&autorotate=true&json-data=1597852519794&decrypt=1&gzip=true&tv=112&exp=0.78&hdr-intensity=0.9&le-probe=0&hdr=10&phcl=true&plane=0.1"
+            alt="atom" onclick="upload(this.id,this.alt)" src="assets/3dmodels/thumbnails/atomstruct.png"
+            style="width:100%">
+          <h4>Atom</h4>
+        </div>
+      </button>
+    </div>
+    <div class="column nature">
+      <button>
+        <div class="content">
+          <img id="https://p3d.in/0MrVC" alt="diamond" onclick="upload(this.id,this.alt)"
+            src="assets/3dmodels/thumbnails/diamond.PNG" style="width:100%">
+          <h4>Diamond</h4>
+        </div>
+      </button>
+    </div>
+    <div class="column nature">
+      <button>
+        <div class="content">
+          <img id="https://p3d.in/uV1R6" alt="anatomy" onclick="upload(this.id,this.alt)"
+            src="assets/3dmodels/thumbnails/HumanAnatomy.PNG" style="width:100%">
+          <h4>Human Muscles</h4>
+        </div>
+      </button>
+    </div>
+    <!-- END GRID -->
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyDr_z5lQ7xv9c46JTRPKJLxF6klmt5JUl8",
+        authDomain: "webinar-9e484.firebaseapp.com",
+        databaseURL: "https://webinar-9e484.firebaseio.com",
+        projectId: "webinar-9e484",
+        storageBucket: "webinar-9e484.appspot.com",
+        messagingSenderId: "140762967682",
+        appId: "1:140762967682:web:1a30fccfa9469ac7ddce9b"
+      };
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+
+    </script>
+  </div>
+
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <!-- <script src="app.js"></script> -->
+  <script src="assets/js/models.js"></script>
+</body>
+
+</html>

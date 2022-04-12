@@ -656,17 +656,34 @@ section {
   margin-bottom: 0;
 }
 
+iframe {
+  position: relative;
+  top: 20px;
+  width: 110%;
+  height: 98%;
+  border: none;
+  position: relative;
+  display: inline-block;
+  left: 0px;
+  
+}
+
 #target {
-  width: 320px;
-  height: 600px;
+  width: 350px;
+  height: 650px;
   resize: both;
 }
 
 #target1 {
-  width: 320px;
-  height: 600px;
+  width: 375px !important; 
+  height: 637px !important; 
   resize: both;
+  position: relative;
+  margin-right: 100px;
+
 }
+
+
 
 
 
@@ -681,19 +698,6 @@ section {
   display: table;
   clear: both;
 }
-
-iframe {
-  position: relative;
-  top: 20px;
-  width: 100%;
-  height: 98%;
-  border: none;
-  position: relative;
-  display: flex;
-  left: 20px;
-
-}
-
 
 .about .content .btn-learn-more {
   text-align: center;

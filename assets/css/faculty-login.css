@@ -1,5 +1,5 @@
 body {
-  background-color: #3498db;
+  background-image: url("/assets/img/bgimgschoolar.png");
   font-family: "Asap", sans-serif;
 }
 
@@ -48,7 +48,7 @@ body {
 .login::after {
   left: 35%;
   bottom: -125%;
-  background-color: rgba(2, 128, 144, 0.2);
+  background-color: #bc7b8f;
   -webkit-animation: wawes 7s infinite;
   -moz-animation: wawes 7s infinite;
   animation: wawes 7s infinite;
@@ -57,7 +57,7 @@ body {
 .login  input {
   font-family: "Asap", sans-serif;
   display: block;
-  border-radius: 5px;
+  border-radius: 20px;
   font-size: 16px;
   background: white;
   width: 100%;
@@ -75,7 +75,7 @@ body {
   margin: 0px 10px;
   cursor: pointer;
   text-transform: uppercase;
-  background-color: #3498db;
+  background-color: #bc7b8f;
   color: #fff;
   align-items: center;
   margin-left: -5px;
@@ -86,7 +86,7 @@ body {
 }
 
 .login  button:hover {
-  background-color: #2d86c2;
+  background-color: #c55073;
 }
 
 @-webkit-keyframes wawes {

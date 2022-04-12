@@ -4,31 +4,43 @@
 	box-sizing: border-box;
 }
 
+div {
+    display: flex;
+    align-items: center;
+  }
+
 html {
 	font: 100%/1.5 Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
 	color: #fff;
-	background-color: #b6def2;
+	background-image: url("/assets/img/bgimgschoolar.png");
 	-webkit-font-smoothing: antialiased;
+    
 }
 
 .promo {
-	margin: 6em auto;
-	max-width: 600px;
+
 	text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .promo em {
 	font-family: Georgia, Times New Roman, serif;
-	display: inline-block;
-	background-color: #b6def2;
-	color: #194c66;
-	width: 4.5em;
-	height: 4.5em;
+	background-color: #fff9cf;
+    font-size: large;
+	color: #bc7b8f;
+	width: 6em;
+	height: 6em;
 	padding: 1.5em;
 	border-radius: 50%;
 	position: relative;
 	z-index: 2;
 	margin: -1.5em -1em;
+    text-align: center;
 }
 
 .butt {
@@ -39,30 +51,31 @@ html {
 	text-decoration: none;
 	font-weight: 700;
 	text-transform: uppercase;
-	font-size: .75em;
+	font-size: 1em;
 	line-height: 2;
 	display: inline-block;
-	letter-spacing: .1em;
+	letter-spacing: .4em;
 }
 
 .promo .butt {
-	min-width: 245px;
+	min-width: 500px;
+    
 }
 
 	.primary.butt {
-		background-color: #eb7966;
+		background-color: #bc7b8f;
 		color: #fff;
 	}
 
 		.primary.butt:hover {
-			background-color: #d15a45;
+			background-color: #bc7b8f;
 		}
 
 	.secondary.butt {
-		background-color: #194c66;
+		background-color: #dca959;
 		color: #fff;
 	}
 
 		.secondary.butt:hover {
-			background-color: #0b374d;
+			background-color: #da8e15;
 		}

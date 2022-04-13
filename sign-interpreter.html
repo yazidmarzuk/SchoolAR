@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Student Portal</title>
+    <title>Hand Sign InterPreter</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -33,6 +33,8 @@
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
 
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/sign_interpreter.css" rel="stylesheet" />
+    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link
       rel="stylesheet"
@@ -62,39 +64,48 @@
       <div class="container d-flex align-items-center">
         <div class="logo mr-auto">
           <h1 class="text-light">
-            <a href="/index.html" ><span>School<span style="color: #bc7b8f; ">AR</span>- StudentPortal</span></a>
+            <a href="/index.html" > HandSign <span style="color: #bc7b8f; ">Interpreter</span></span></a>
           </h1>
         </div>
       </div>
     </header>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
+ <br> <br>
+        <div style="  margin: auto; width: 50%;">
           <div id="target" >
-            <div id="target"style="width: 550px; height: 600px;" >
+            <div id="target"style="width: 850px; height: 500px;" >
               <br /><br />
-              <iframe
-                src="/videocall.html"
-                style="border: 3px solid #bc7b8f; border-radius: 5%;"
-              ></iframe>
+              <iframe src="http://localhost:8501" style="border: 0;" webkitallowfullscreen allowfullscreen frameborder="no" width="720" height="405" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <br /><br />
-          <div id="target" style="padding-left: 260px; width: 790px; height: 600px;">
-            <iframe
-            id="sFrame"
-              src="https://gltf-viewer.donmccurdy.com#kiosk=1&model=https://storage.googleapis.com/blocks-town/tmp/busterDrone/busterDrone.gltf"
-              style="border: 3px solid #bc7b8f; border-radius: 5%;"
-            ></iframe>
-          </div>
-        </div>
+
+
         
         </div>
       </div>
     </div>
 
+
+    <div id="app-cover">
+        <div id="password-box">
+          <i class="fa fa-chevron-right	w3-xxlarge" id="icon-1"></i>
+          <div id="input-box">
+            <input type="text" id="detected text" placeholder="Sign to Text">
+          </div>
+          <i class="fas fa fa-volume-up	w3-xxlarge" id="icon-2"></i>
+          <div id="init-btn"></div>
+        </div>
+        <div id="error-box">
+          <div id="error-message">
+            <div id="error-message-i">
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <span>Password must contain a number</span>
+          </div>
+          <div id="box-1" class="c-box"></div>
+          <div id="box-2" class="c-box b24"></div>
+          <div id="box-3" class="c-box"></div>
+          <div id="box-4" class="c-box b24"></div>
+        </div>
+      </div>
     
     <!-- <div class="speechcontainer" style="margin-bottom: 100% !important;">
       <button id="speech" class="btn">
